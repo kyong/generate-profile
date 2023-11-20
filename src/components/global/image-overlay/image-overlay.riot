@@ -183,19 +183,19 @@
         </div>
          <h2>どっち派？のコーナー</h2>
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 朝
             </div>
-            <div>
+            <div class="column column-30">
                 <input type="radio" name="morning" value="bread" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">パン派
                 <input type="radio" name="morning" value="rice" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ご飯派
             </div>
         </div>
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 ラーメン
             </div>
-            <div>
+            <div class="column column-30">
                 <input type="radio" name="ramen" value="shouyu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">醤油
                 <input type="radio" name="ramen" value="sio" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
                 <input type="radio" name="ramen" value="miso" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">味噌
@@ -203,69 +203,69 @@
             </div>
         </div>
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 ポップコーン
             </div>
-            <div>
+            <div class="column column-30">
                 <input type="radio" name="popcorn" value="salt" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
                 <input type="radio" name="popcorn" value="caramell" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">キャラメル
             </div>
         </div>
 
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 あんこ
             </div>
-            <div>
-                <input type="radio" name="popcorn" value="kosi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">こしあん
-                <input type="radio" name="popcorn" value="tubu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">つぶあん
+            <div class="column column-30">
+                <input type="radio" name="anko" value="kosi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">こしあん
+                <input type="radio" name="anko" value="tubu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">つぶあん
             </div>
         </div>
 
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 卵焼き
             </div>
-            <div>
-                <input type="radio" name="popcorn" value="sweety" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">甘め
-                <input type="radio" name="popcorn" value="salty" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">しょっぱめ
-                <input type="radio" name="popcorn" value="dashi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">だし
+            <div class="column column-30">
+                <input type="radio" name="tamagoyaki" value="sweety" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">甘め
+                <input type="radio" name="tamagoyaki" value="salty" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">しょっぱめ
+                <input type="radio" name="tamagoyaki" value="dashi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">だし
             </div>
         </div>
 
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 カントリーマアム
             </div>
-            <div>
+            <div class="column column-30">
                 <input type="radio" name="countrymaam" value="white" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">白
                 <input type="radio" name="countrymaam" value="brown" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">茶
             </div>
         </div>
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 柿ピーの重要度
             </div>
-            <div>
+            <div class="column column-30">
                 <input type="radio" name="kakip" value="kaki" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">柿
                 <input type="radio" name="kakip" value="p" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ピー
             </div>
         </div>
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 仕事中の飲み物
             </div>
-            <div>
+            <div class="column column-30">
                 <input type="radio" name="workdrink" value="coffee" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーヒー
                 <input type="radio" name="workdrink" value="tea" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">紅茶
                 <input type="radio" name="workdrink" value="etc" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">その他
             </div>
         </div>
         <div class="row">
-            <div class="column column-10">
+            <div class="column column-20">
                 アイス
             </div>
-            <div>
+            <div class="column column-30">
                 <input type="radio" name="icecream" value="cap" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">カップ
                 <input type="radio" name="icecream" value="cone" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーン
             </div>
@@ -638,19 +638,281 @@
                     maxWidth: 281,
                     maxHeight: 34,
                 },
+                myboom: {
+                    x: 979,
+                    y: 75,
+                    fontSize: 17,
+                    maxWidth: 262,
+                    maxHeight: 44,
+                },
+                myboom_reason: {
+                    x: 979,
+                    y: 118,
+                    fontSize: 17,
+                    maxWidth: 262,
+                    maxHeight: 30,
+                },
+                convenience_1: {
+                    x: 964,
+                    y: 283,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 74,
+                },
+                convenience_2: {
+                    x: 1069,
+                    y: 283,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 74,
+                },
+                convenience_3: {
+                    x: 1168,
+                    y: 283,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 74,
+                },
+                nigate_1: {
+                    x: 668,
+                    y: 429,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                nigate_1_reason: {
+                    x: 826,
+                    y: 429,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                nigate_2: {
+                    x: 668,
+                    y: 472,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                nigate_2_reason: {
+                    x: 826,
+                    y: 472,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                nigate_3: {
+                    x: 969,
+                    y: 115,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                nigate_3_reason: {
+                    x: 1127,
+                    y: 115,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                nigate_4: {
+                    x: 969,
+                    y: 158,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                nigate_4_reason: {
+                    x: 1127,
+                    y: 158,
+                    fontSize: 17,
+                    maxWidth: 115,
+                    maxHeight: 36,
+                },
+                before_death: {
+                    x: 668,
+                    y: 558,
+                    fontSize: 17,
+                    maxWidth: 284,
+                    maxHeight: 36,
+                },
+                havent_eaten: {
+                    x: 971,
+                    y: 556,
+                    fontSize: 17,
+                    maxWidth: 284,
+                    maxHeight: 36,
+                },
+                adult: {
+                    x: 668,
+                    y: 638,
+                    fontSize: 17,
+                    maxWidth: 284,
+                    maxHeight: 36,
+                },
+                foreign: {
+                    x: 971,
+                    y: 638,
+                    fontSize: 17,
+                    maxWidth: 284,
+                    maxHeight: 36,
+                },
+                mybest_restaurant_1: {
+                    x: 729,
+                    y: 756,
+                    fontSize: 17,
+                    maxWidth: 204,
+                    maxHeight: 36,
+                },
+                mybest_restaurant_2: {
+                    x: 729,
+                    y: 808,
+                    fontSize: 17,
+                    maxWidth: 204,
+                    maxHeight: 36,
+                },
+                mybest_restaurant_3: {
+                    x: 729,
+                    y: 857,
+                    fontSize: 17,
+                    maxWidth: 204,
+                    maxHeight: 36,
+                },
+                myranking: {
+                    x: 1057,
+                    y: 705,
+                    fontSize: 17,
+                    maxWidth: 120,
+                    maxHeight: 36,
+                },
+                myranking_1: {
+                    x: 1057,
+                    y: 767,
+                    fontSize: 17,
+                    maxWidth: 178,
+                    maxHeight: 36,
+                },
+                myranking_2: {
+                    x: 1057,
+                    y: 821,
+                    fontSize: 17,
+                    maxWidth: 178,
+                    maxHeight: 36,
+                },
+                myranking_3: {
+                    x: 1057,
+                    y: 876,
+                    fontSize: 17,
+                    maxWidth: 178,
+                    maxHeight: 36,
+                },
             },
 
             circle_positions: {
                 morning: {
-                    rice: {
-                        x: 210,
-                        y: 354,
-                        radius: 5,
-                    },
                     bread: {
-                        x: 210,
-                        y: 370,
-                        radius: 5,
+                        x: 740,
+                        y: 83,
+                    },
+                    rice: {
+                        x: 791,
+                        y: 83,
+                    },
+                },
+                ramen: {
+                    shouyu: {
+                        x: 784,
+                        y: 113,
+                    },
+                    sio: {
+                        x: 826,
+                        y: 113,
+                    },
+                    miso: {
+                        x: 868,
+                        y: 113,
+                    },
+                    tonkotu: {
+                        x: 910,
+                        y: 113,
+                    },
+                },
+                popcorn: {
+                    salt: {
+                        x: 807,
+                        y: 143,
+                    },
+                    caramell: {
+                        x: 865,
+                        y: 143,
+                    },
+                },
+                anko: {
+                    kosi: {
+                        x: 781,
+                        y: 174,
+                    },
+                    tubu: {
+                        x: 861,
+                        y: 174,
+                    },
+                },
+                tamagoyaki: {
+                    sweety: {
+                        x: 771,
+                        y: 204,
+                    },
+                    salty: {
+                        x: 834,
+                        y: 204,
+                    },
+                    dashi: {
+                        x: 894,
+                        y: 204,
+                    },
+                },
+                countrymaam: {
+                    white: {
+                        x: 836,
+                        y: 237,
+                    },
+                    brown: {
+                        x: 874,
+                        y: 237,
+                    },
+                },
+                kakip: {
+                    kaki: {
+                        x: 820,
+                        y: 267,
+                    },
+                    p: {
+                        x: 861,
+                        y: 267,
+                    },
+                },
+                workdrink: {
+                    coffee: {
+                        x: 779,
+                        y: 297,
+                    },
+                    tea: {
+                        x: 848,
+                        y: 297,
+                    },
+                    etc: {
+                        x: 906,
+                        y: 297,
+                    },
+                },
+                icecream: {
+                    cap: {
+                        x: 777,
+                        y: 327,
+                    },
+                    cone: {
+                        x: 839,
+                        y: 327,
                     },
                 },
             },
@@ -676,6 +938,10 @@
                         const text = this.texts[name];
                         const position = this.positions[name];
                         drawText(ctx, text, position.x, position.y, position.maxWidth, position.maxHeight, `${position.fontSize}px sans-serif`, 'black');
+                    }
+                    for (let name in this.circles) {
+                        const position = this.circle_positions[name][this.circles[name]];
+                        drawCircle(ctx, position.x, position.y, 15, 'black', 3);
                     }
                 };
 
@@ -758,5 +1024,23 @@
             return font.replace(fontSizePattern, `${newFontSize}px`);
         }
 
+
+        /**
+        * 指定された設定で円をCanvasに描画する関数
+        * @param {CanvasRenderingContext2D} ctx - Canvasのコンテキスト
+        * @param {number} x - X座標
+        * @param {number} y - Y座標
+        * @param {number} radius - 半径
+        * @param {string} borderColor - 円の色
+        * @param {number} borderWidth - 線の太さ
+        */
+        function drawCircle(ctx, x, y, radius, borderColor, borderWidth = 1) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.lineWidth = borderWidth;
+            ctx.strokeStyle = borderColor;
+            ctx.stroke();
+            ctx.closePath();
+        }
     </script>
 </image-overlay>
