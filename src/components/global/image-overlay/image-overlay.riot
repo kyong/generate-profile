@@ -435,7 +435,7 @@
             positions: {
                 name: {
                     x: 364,
-                    y: 53,
+                    y: 50,
                     fontSize: 30,
                     maxWidth: 227,
                     maxHeight: 35,
@@ -976,6 +976,7 @@
                 const canvas = this.$('canvas');
                 const ctx = canvas.getContext('2d');
                 const image = new Image();
+                image.crossOrigin = 'anonymous';
                 image.onload = () => {
                     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                     for (let name in this.texts) {
@@ -988,15 +989,14 @@
                         drawCircle(ctx, position.x, position.y, 15, 'black', 3);
                     }
                 };
-
-                image.src = 'https://img.dailyportalz.jp/2116/7954/6433/base.jpg'; // 画像のパスを指定
+                image.src = '/images/base.jpg'; // 画像のパスを指定
             },
             downloadCanvas() {
                 const canvas = this.$('canvas');
                 const dataURL = canvas.toDataURL('image/png');
                 const link = document.createElement('a');
                 link.href = dataURL;
-                link.download = 'canvas-image.png';
+                link.download = 'food-profile.png';
                 link.click();
             }
         };
