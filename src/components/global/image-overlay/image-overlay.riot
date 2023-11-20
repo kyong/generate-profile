@@ -1,6 +1,6 @@
 <image-overlay>
     <form onsubmit="{submit}">
-        名前: <input type="text" name="name" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        名前: <input type="text" name="name" value="{texts.name}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
         <h2>なんでもTOP3</h2>
         <div class="row">
             <div class="column column-20">
@@ -8,15 +8,15 @@
             </div>
             <div class="column column-30">
                 <label> 1位</label>
-                <input type="text" name="vegetable_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+                <input type="text" name="vegetable_1" value="{texts.vegetable_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
             </div>
             <div class="column column-30">
                 <label> 2位</label>
-                <input type="text" name="vegetable_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="vegetable_2" value="{texts.vegetable_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label> 3位</label>
-                <input type="text" name="vegetable_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="vegetable_3" value="{texts.vegetable_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <div class="row">
@@ -25,15 +25,15 @@
             </div>
             <div class="column column-30">
                 <label> 1位</label>
-                <input type="text" name="fruits_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+                <input type="text" name="fruits_1" value="{texts.fruits_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
             </div>
             <div class="column column-30">
                 <label> 2位</label>
-                <input type="text" name="fruits_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="fruits_2" value="{texts.fruits_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label> 3位</label>
-                <input type="text" name="fruits_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="fruits_3" value="{texts.fruits_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
          </div>
         <div class="row">
@@ -42,15 +42,15 @@
             </div>
             <div class="column column-30">
                 <label> 1位</label>
-                <input type="text" name="miso_soup_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+                <input type="text" name="miso_soup_1" value="{texts.miso_soup_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
             </div>
             <div class="column column-30">
                 <label> 2位</label>
-                <input type="text" name="miso_soup_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="miso_soup_2" value="{texts.miso_soup_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label> 3位</label>
-                <input type="text" name="miso_soup_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="miso_soup_3" value="{texts.miso_soup_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
          </div>
         <div class="row">
@@ -59,99 +59,99 @@
             </div>
             <div class="column column-30">
                 <label> 1位</label>
-                <input type="text" name="drink_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+                <input type="text" name="drink_1" value="{texts.drink_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
             </div>
             <div class="column column-30">
                 <label> 2位</label>
-                <input type="text" name="drink_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="drink_2" value="{texts.drink_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label> 3位</label>
-                <input type="text" name="drink_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="drink_3" value="{texts.drink_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
          </div>
          <h2>何でもマイベスト</h2>
         <div class="row">
             <div class="column column-30">
                 <label>寿司</label>
-                <input type="text" name="sushi" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+                <input type="text" name="sushi" value="{texts.sushi}" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
             </div>
             <div class="column column-30">
                 <label>パスタ</label>
-                <input type="text" name="pasta" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="pasta" value="{texts.pasta}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>ラーメン</label>
-                <input type="text" name="ramen" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="ramen" value="{texts.ramen}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>パン</label>
-                <input type="text" name="bread" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="bread" value="{texts.bread}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <div class="row">
             <div class="column column-30">
                 <label>コンビニチキン</label>
-                <input type="text" name="chicken" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="chicken" value="{texts.chicken}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>丼物</label>
-                <input type="text" name="don" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="don" value="{texts.don}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>きのこ</label>
-                <input type="text" name="mashroom" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="mashroom" value="{texts.mashroom}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>カップヌードルの味</label>
-                <input type="text" name="cupnoodles" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="cupnoodles" value="{texts.cupnoodles}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <div class="row">
             <div class="column column-30">
                 <label>おでんの具</label>
-                <input type="text" name="oden" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="oden" value="{texts.oden}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>おにぎり</label>
-                <input type="text" name="onigiri" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="onigiri" value="{texts.onigiri}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>おつまみ</label>
-                <input type="text" name="otumami" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="otumami" value="{texts.otumami}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>中華まん</label>
-                <input type="text" name="man" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="man" value="{texts.man}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
          </div>
          <h2>スイーツ＆お菓子</h2>
         <div class="row">
             <div class="column column-30">
                 <label>駄菓子</label>
-                <input type="text" name="dagashi" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="dagashi" value="{texts.dagashi}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>アイス</label>
-                <input type="text" name="icecream" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="icecream" value="{texts.icecream}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>ケーキ</label>
-                <input type="text" name="cake" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="cake" value="{texts.cake}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <div class="row">
             <div class="column column-30">
                 <label>ポテチ</label>
-                <input type="text" name="potatochips" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="potatochips" value="{texts.potatochips}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>チョコ</label>
-                <input type="text" name="chocolate" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="chocolate" value="{texts.chocolate}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>グミ</label>
-                <input type="text" name="gumi" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="gumi" value="{texts.gumi}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
          <h2>この店では絶対これ！</h2>
@@ -159,26 +159,26 @@
 
             <div class="column column-30">
                 <label>ミスタードーナツ</label>
-                <input type="text" name="misterdonats" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="misterdonats" value="{texts.misterdonats}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>マクドナルド</label>
-                <input type="text" name="mcdonald" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="mcdonald" value="{texts.mcdonald}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>サイゼリヤ</label>
-                <input type="text" name="saizeriya" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="saizeriya" value="{texts.saizeriya}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <div class="row">
             <div class="column column-30">
                 <label>スターバックス</label>
-                <input type="text" name="starbucks" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="starbucks" value="{texts.starbucks}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
 
             <div class="column column-30">
                 <label>大戸屋</label>
-                <input type="text" name="ootoya" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="ootoya" value="{texts.ootoya}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
          <h2>どっち派？のコーナー</h2>
@@ -187,8 +187,8 @@
                 朝
             </div>
             <div class="column column-30">
-                <input type="radio" name="morning" value="bread" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">パン派
-                <input type="radio" name="morning" value="rice" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ご飯派
+                <input type="radio" name="morning" value="bread"  checked="{circles.morning==='bread'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">パン派
+                <input type="radio" name="morning" value="rice"  checked="{circles.morning==='rice'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ご飯派
             </div>
         </div>
         <div class="row">
@@ -196,10 +196,10 @@
                 ラーメン
             </div>
             <div class="column column-30">
-                <input type="radio" name="ramen" value="shouyu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">醤油
-                <input type="radio" name="ramen" value="sio" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
-                <input type="radio" name="ramen" value="miso" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">味噌
-                <input type="radio" name="ramen" value="tonkotu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">豚骨
+                <input type="radio" name="ramen" value="shouyu"  checked="{circles.ramen==='shouyu'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">醤油
+                <input type="radio" name="ramen" value="sio"  checked="{circles.ramen==='sio'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
+                <input type="radio" name="ramen" value="miso"  checked="{circles.ramen==='miso'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">味噌
+                <input type="radio" name="ramen" value="tonkotu"  checked="{circles.ramen==='tonkotu'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">豚骨
             </div>
         </div>
         <div class="row">
@@ -207,8 +207,8 @@
                 ポップコーン
             </div>
             <div class="column column-30">
-                <input type="radio" name="popcorn" value="salt" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
-                <input type="radio" name="popcorn" value="caramell" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">キャラメル
+                <input type="radio" name="popcorn" value="salt"  checked="{circles.popcorn==='salt'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
+                <input type="radio" name="popcorn" value="caramell"  checked="{circles.popcorn==='caramell'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">キャラメル
             </div>
         </div>
 
@@ -217,8 +217,8 @@
                 あんこ
             </div>
             <div class="column column-30">
-                <input type="radio" name="anko" value="kosi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">こしあん
-                <input type="radio" name="anko" value="tubu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">つぶあん
+                <input type="radio" name="anko" value="kosi"  checked="{circles.anko==='kosi'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">こしあん
+                <input type="radio" name="anko" value="tubu"  checked="{circles.anko==='tubu'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">つぶあん
             </div>
         </div>
 
@@ -227,9 +227,9 @@
                 卵焼き
             </div>
             <div class="column column-30">
-                <input type="radio" name="tamagoyaki" value="sweety" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">甘め
-                <input type="radio" name="tamagoyaki" value="salty" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">しょっぱめ
-                <input type="radio" name="tamagoyaki" value="dashi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">だし
+                <input type="radio" name="tamagoyaki" value="sweety"  checked="{circles.tamagoyaki==='sweety'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">甘め
+                <input type="radio" name="tamagoyaki" value="salty"  checked="{circles.tamagoyaki==='salty'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">しょっぱめ
+                <input type="radio" name="tamagoyaki" value="dashi"  checked="{circles.tamagoyaki==='dashi'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">だし
             </div>
         </div>
 
@@ -238,8 +238,8 @@
                 カントリーマアム
             </div>
             <div class="column column-30">
-                <input type="radio" name="countrymaam" value="white" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">白
-                <input type="radio" name="countrymaam" value="brown" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">茶
+                <input type="radio" name="countrymaam" value="white"  checked="{circles.countrymaam==='white'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">白
+                <input type="radio" name="countrymaam" value="brown"  checked="{circles.countrymaam==='brown'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">茶
             </div>
         </div>
         <div class="row">
@@ -247,8 +247,8 @@
                 柿ピーの重要度
             </div>
             <div class="column column-30">
-                <input type="radio" name="kakip" value="kaki" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">柿
-                <input type="radio" name="kakip" value="p" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ピー
+                <input type="radio" name="kakip" value="kaki"  checked="{circles.kakip==='kaki'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">柿
+                <input type="radio" name="kakip" value="p"  checked="{circles.kakip==='p'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ピー
             </div>
         </div>
         <div class="row">
@@ -256,9 +256,9 @@
                 仕事中の飲み物
             </div>
             <div class="column column-30">
-                <input type="radio" name="workdrink" value="coffee" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーヒー
-                <input type="radio" name="workdrink" value="tea" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">紅茶
-                <input type="radio" name="workdrink" value="etc" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">その他
+                <input type="radio" name="workdrink" value="coffee"  checked="{circles.workdrink==='coffee'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーヒー
+                <input type="radio" name="workdrink" value="tea"  checked="{circles.workdrink==='tea'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">紅茶
+                <input type="radio" name="workdrink" value="etc"  checked="{circles.workdrink==='etc'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">その他
             </div>
         </div>
         <div class="row">
@@ -266,34 +266,34 @@
                 アイス
             </div>
             <div class="column column-30">
-                <input type="radio" name="icecream" value="cap" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">カップ
-                <input type="radio" name="icecream" value="cone" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーン
+                <input type="radio" name="icecream" value="cap"  checked="{circles.icecream==='cap'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">カップ
+                <input type="radio" name="icecream" value="cone"  checked="{circles.icecream==='cone'}" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーン
             </div>
         </div>
         <h2>最近ハマっている食べ物</h2>
         <div class="row">
             <div class="column column-30">
                 <label></label>
-                <input type="text" name="myboom" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="myboom" value="{texts.myboom}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label></label>
-                <input type="text" name="myboom_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="myboom_reason" value="{texts.myboom_reason}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <h2>コンビニで買えるもので大好きベスト３</h2>
         <div class="row">
             <div class="column column-30">
                 <label>1位</label>
-                <input type="text" name="convenience_1" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="convenience_1" value="{texts.convenience_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>2位</label>
-                <input type="text" name="convenience_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="convenience_2" value="{texts.convenience_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>3位</label>
-                <input type="text" name="convenience_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="convenience_3" value="{texts.convenience_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         
@@ -301,75 +301,75 @@
         <div class="row">
             <div class="column column-30">
                 <label>その１</label>
-                <input type="text" name="nigate_1" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_1" value="{texts.nigate_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
                 <label>理由</label>
-                <input type="text" name="nigate_1_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_1_reason" value="{texts.nigate_1_reason}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>その１</label>
-                <input type="text" name="nigate_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_2" value="{texts.nigate_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
                 <label>理由</label>
-                <input type="text" name="nigate_2_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_2_reason" value="{texts.nigate_2_reason}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <div class="row">
             <div class="column column-30">
                 <label>その１</label>
-                <input type="text" name="nigate_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_3" value="{texts.nigate_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
                 <label>理由</label>
-                <input type="text" name="nigate_3_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_3_reason" value="{texts.nigate_3_reason}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label>その１</label>
-                <input type="text" name="nigate_4" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_4" value="{texts.nigate_4}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
                 <label>理由</label>
-                <input type="text" name="nigate_4_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="nigate_4_reason" value="{texts.nigate_4_reason}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <h2>死ぬ前にこれ食べたい</h2>
-        <input type="text" name="before_death" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        <input type="text" name="before_death" value="{texts.before_death}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
         
         <h2>まだ食べてないけど食べたい</h2>
-        <input type="text" name="havent_eaten" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        <input type="text" name="havent_eaten" value="{texts.havent_eaten}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
         
         <h2>大人になってから好きになった</h2>
-        <input type="text" name="adult" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        <input type="text" name="adult" value="{texts.adult}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
         
         <h2>海外の料理で特に好きなもの</h2>
-        <input type="text" name="foreign" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        <input type="text" name="foreign" value="{texts.foreign}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
         
         
         <h2>マイベストご飯屋</h2>
         <div class="row">
             <div class="column column-30">
                 <label> 1位</label>
-                <input type="text" name="mybest_restaurant_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+                <input type="text" name="mybest_restaurant_1" value="{texts.mybest_restaurant_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
             </div>
             <div class="column column-30">
                 <label> 2位</label>
-                <input type="text" name="mybest_restaurant_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="mybest_restaurant_2" value="{texts.mybest_restaurant_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label> 3位</label>
-                <input type="text" name="mybest_restaurant_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="mybest_restaurant_3" value="{texts.mybest_restaurant_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <h2>個人的TOP3</h2>
         <div class="column column-30">
-            <input type="text" name="myranking" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            <input type="text" name="myranking" value="{texts.myranking}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
         </div>
         <div class="row">
             <div class="column column-30">
                 <label> 1位</label>
-                <input type="text" name="myranking_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+                <input type="text" name="myranking_1" value="{texts.myranking_1}" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
             </div>
             <div class="column column-30">
                 <label> 2位</label>
-                <input type="text" name="myranking_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="myranking_2" value="{texts.myranking_2}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
             <div class="column column-30">
                 <label> 3位</label>
-                <input type="text" name="myranking_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <input type="text" name="myranking_3" value="{texts.myranking_3}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
             </div>
         </div>
         <button type="submit">Add Text to Image</button>
@@ -381,9 +381,55 @@
 
     <button onclick="{downloadCanvas}">Download Image</button>
     <script>
+        import { onMounted, onBeforeUnmount } from 'riot';
+
         export default {
             texts: {},
-            circles: {},
+            circles: {
+                morning: '',
+                ramen: '',
+                popcorn: '',
+                anko: '',
+                tamagoyaki: '',
+                countrymaam: '',
+                kakip: '',
+                workdrink: '',
+                icecream: '',
+            },
+            onMounted() {
+                window.addEventListener('beforeunload', this.saveInput);
+                this.restoreInput();
+            },
+            onBeforeUnmount() {
+                window.removeEventListener('beforeunload', this.saveInput);
+            },
+
+            updateText(name, newText) {
+                this.texts[name] = newText;
+                this.update();
+            },
+
+            updateSelect(name, newSelect) {
+                this.circles[name] = newSelect;
+                this.update();
+            },
+            saveInput() {
+                localStorage.setItem('texts', JSON.stringify(this.texts));
+                localStorage.setItem('circles', JSON.stringify(this.circles));
+            },
+            restoreInput() {
+                const texts = localStorage.getItem('texts');
+                if (texts) {
+                    this.texts = JSON.parse(texts);
+                }
+                const circles = localStorage.getItem('circles');
+                if (circles) {
+                    this.circles = JSON.parse(circles);
+                }
+                this.update();
+
+            },
+
 
             positions: {
                 name: {
@@ -917,13 +963,12 @@
                 },
             },
 
-            updateText(name, newText) {
-                this.texts[name] = newText;
+            clearText() {
+                this.texts = {};
+                this.circles = {};
+                this.update()
             },
 
-            updateSelect(name, newSelect) {
-                this.circles[name] = newSelect;
-            },
 
             submit(e) {
                 e.preventDefault();
