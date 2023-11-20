@@ -1,5 +1,5 @@
 <image-overlay>
-    
+
     <form onsubmit="{submit}">
         名前: <input type="text" name="name" value="{texts.name}" oninput="{e => this.updateText(e.target.name, e.target.value)}">
         <h2>なんでもTOP3</h2>
@@ -694,7 +694,7 @@
                 },
                 myboom_reason: {
                     x: 979,
-                    y: 118,
+                    y: 135,
                     fontSize: 17,
                     maxWidth: 262,
                     maxHeight: 30,
@@ -826,7 +826,7 @@
                     maxHeight: 36,
                 },
                 myranking: {
-                    x: 1057,
+                    x: 1067,
                     y: 705,
                     fontSize: 17,
                     maxWidth: 120,
@@ -976,8 +976,6 @@
                 const canvas = this.$('canvas');
                 const ctx = canvas.getContext('2d');
                 const image = new Image();
-         
-
                 image.onload = () => {
                     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
                     for (let name in this.texts) {
