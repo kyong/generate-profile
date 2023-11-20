@@ -1,0 +1,762 @@
+<image-overlay>
+    <form onsubmit="{submit}">
+        名前: <input type="text" name="name" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        <h2>なんでもTOP3</h2>
+        <div class="row">
+            <div class="column column-20">
+            好きな野菜:
+            </div>
+            <div class="column column-30">
+                <label> 1位</label>
+                <input type="text" name="vegetable_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+            </div>
+            <div class="column column-30">
+                <label> 2位</label>
+                <input type="text" name="vegetable_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label> 3位</label>
+                <input type="text" name="vegetable_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-20">
+                好きな果物:
+            </div>
+            <div class="column column-30">
+                <label> 1位</label>
+                <input type="text" name="fruits_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+            </div>
+            <div class="column column-30">
+                <label> 2位</label>
+                <input type="text" name="fruits_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label> 3位</label>
+                <input type="text" name="fruits_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+         </div>
+        <div class="row">
+            <div class="column column-20">
+                好きな味噌汁の具:
+            </div>
+            <div class="column column-30">
+                <label> 1位</label>
+                <input type="text" name="miso_soup_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+            </div>
+            <div class="column column-30">
+                <label> 2位</label>
+                <input type="text" name="miso_soup_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label> 3位</label>
+                <input type="text" name="miso_soup_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+         </div>
+        <div class="row">
+            <div class="column column-20">
+                好きな飲み物:
+            </div>
+            <div class="column column-30">
+                <label> 1位</label>
+                <input type="text" name="drink_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+            </div>
+            <div class="column column-30">
+                <label> 2位</label>
+                <input type="text" name="drink_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label> 3位</label>
+                <input type="text" name="drink_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+         </div>
+         <h2>何でもマイベスト</h2>
+        <div class="row">
+            <div class="column column-30">
+                <label>寿司</label>
+                <input type="text" name="sushi" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+            </div>
+            <div class="column column-30">
+                <label>パスタ</label>
+                <input type="text" name="pasta" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>ラーメン</label>
+                <input type="text" name="ramen" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>パン</label>
+                <input type="text" name="bread" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-30">
+                <label>コンビニチキン</label>
+                <input type="text" name="chicken" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>丼物</label>
+                <input type="text" name="don" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>きのこ</label>
+                <input type="text" name="mashroom" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>カップヌードルの味</label>
+                <input type="text" name="cupnoodles" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-30">
+                <label>おでんの具</label>
+                <input type="text" name="oden" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>おにぎり</label>
+                <input type="text" name="onigiri" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>おつまみ</label>
+                <input type="text" name="otumami" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>中華まん</label>
+                <input type="text" name="man" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+         </div>
+         <h2>スイーツ＆お菓子</h2>
+        <div class="row">
+            <div class="column column-30">
+                <label>駄菓子</label>
+                <input type="text" name="dagashi" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>アイス</label>
+                <input type="text" name="icecream" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>ケーキ</label>
+                <input type="text" name="cake" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-30">
+                <label>ポテチ</label>
+                <input type="text" name="potatochips" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>チョコ</label>
+                <input type="text" name="chocolate" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>グミ</label>
+                <input type="text" name="gumi" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+         <h2>この店では絶対これ！</h2>
+        <div class="row">
+
+            <div class="column column-30">
+                <label>ミスタードーナツ</label>
+                <input type="text" name="misterdonats" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>マクドナルド</label>
+                <input type="text" name="mcdonald" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>サイゼリヤ</label>
+                <input type="text" name="saizeriya" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-30">
+                <label>スターバックス</label>
+                <input type="text" name="starbucks" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+
+            <div class="column column-30">
+                <label>大戸屋</label>
+                <input type="text" name="ootoya" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+         <h2>どっち派？のコーナー</h2>
+        <div class="row">
+            <div class="column column-10">
+                朝
+            </div>
+            <div>
+                <input type="radio" name="morning" value="bread" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">パン派
+                <input type="radio" name="morning" value="rice" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ご飯派
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-10">
+                ラーメン
+            </div>
+            <div>
+                <input type="radio" name="ramen" value="shouyu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">醤油
+                <input type="radio" name="ramen" value="sio" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
+                <input type="radio" name="ramen" value="miso" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">味噌
+                <input type="radio" name="ramen" value="tonkotu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">豚骨
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-10">
+                ポップコーン
+            </div>
+            <div>
+                <input type="radio" name="popcorn" value="salt" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">塩
+                <input type="radio" name="popcorn" value="caramell" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">キャラメル
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column column-10">
+                あんこ
+            </div>
+            <div>
+                <input type="radio" name="popcorn" value="kosi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">こしあん
+                <input type="radio" name="popcorn" value="tubu" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">つぶあん
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column column-10">
+                卵焼き
+            </div>
+            <div>
+                <input type="radio" name="popcorn" value="sweety" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">甘め
+                <input type="radio" name="popcorn" value="salty" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">しょっぱめ
+                <input type="radio" name="popcorn" value="dashi" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">だし
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column column-10">
+                カントリーマアム
+            </div>
+            <div>
+                <input type="radio" name="countrymaam" value="white" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">白
+                <input type="radio" name="countrymaam" value="brown" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">茶
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-10">
+                柿ピーの重要度
+            </div>
+            <div>
+                <input type="radio" name="kakip" value="kaki" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">柿
+                <input type="radio" name="kakip" value="p" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">ピー
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-10">
+                仕事中の飲み物
+            </div>
+            <div>
+                <input type="radio" name="workdrink" value="coffee" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーヒー
+                <input type="radio" name="workdrink" value="tea" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">紅茶
+                <input type="radio" name="workdrink" value="etc" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">その他
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-10">
+                アイス
+            </div>
+            <div>
+                <input type="radio" name="icecream" value="cap" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">カップ
+                <input type="radio" name="icecream" value="cone" oninput="{e => this.updateSelect(e.target.name, e.target.value)}">コーン
+            </div>
+        </div>
+        <h2>最近ハマっている食べ物</h2>
+        <div class="row">
+            <div class="column column-30">
+                <label></label>
+                <input type="text" name="myboom" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label></label>
+                <input type="text" name="myboom_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <h2>コンビニで買えるもので大好きベスト３</h2>
+        <div class="row">
+            <div class="column column-30">
+                <label>1位</label>
+                <input type="text" name="convenience_1" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>2位</label>
+                <input type="text" name="convenience_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>3位</label>
+                <input type="text" name="convenience_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        
+        <h2>苦手 OR まだ良さがわからない食べ物</h2>
+        <div class="row">
+            <div class="column column-30">
+                <label>その１</label>
+                <input type="text" name="nigate_1" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <label>理由</label>
+                <input type="text" name="nigate_1_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>その１</label>
+                <input type="text" name="nigate_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <label>理由</label>
+                <input type="text" name="nigate_2_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-30">
+                <label>その１</label>
+                <input type="text" name="nigate_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <label>理由</label>
+                <input type="text" name="nigate_3_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label>その１</label>
+                <input type="text" name="nigate_4" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+                <label>理由</label>
+                <input type="text" name="nigate_4_reason" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <h2>死ぬ前にこれ食べたい</h2>
+        <input type="text" name="before_death" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        
+        <h2>まだ食べてないけど食べたい</h2>
+        <input type="text" name="havent_eaten" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        
+        <h2>大人になってから好きになった</h2>
+        <input type="text" name="adult" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        
+        <h2>海外の料理で特に好きなもの</h2>
+        <input type="text" name="foreign" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        
+        
+        <h2>マイベストご飯屋</h2>
+        <div class="row">
+            <div class="column column-30">
+                <label> 1位</label>
+                <input type="text" name="mybest_restaurant_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+            </div>
+            <div class="column column-30">
+                <label> 2位</label>
+                <input type="text" name="mybest_restaurant_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label> 3位</label>
+                <input type="text" name="mybest_restaurant_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <h2>個人的TOP3</h2>
+        <div class="column column-30">
+            <input type="text" name="myranking" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+        </div>
+        <div class="row">
+            <div class="column column-30">
+                <label> 1位</label>
+                <input type="text" name="myranking_1" oninput="{e => this.updateText(e.target.name, e.target.value)}"> 
+            </div>
+            <div class="column column-30">
+                <label> 2位</label>
+                <input type="text" name="myranking_2" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+            <div class="column column-30">
+                <label> 3位</label>
+                <input type="text" name="myranking_3" oninput="{e => this.updateText(e.target.name, e.target.value)}">
+            </div>
+        </div>
+        <button type="submit">Add Text to Image</button>
+    </form>
+
+    <div>
+        <canvas ref="canvas" id="imageCanvas" width="1283" height="934"></canvas>
+    </div>
+
+    <button onclick="{downloadCanvas}">Download Image</button>
+    <script>
+        export default {
+            texts: {},
+            circles: {},
+
+            positions: {
+                name: {
+                    x: 364,
+                    y: 53,
+                    fontSize: 30,
+                    maxWidth: 227,
+                    maxHeight: 35,
+                },
+                vegetable_1: {
+                    x: 210,
+                    y: 141,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                vegetable_2: {
+                    x: 349,
+                    y: 141,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                vegetable_3: {
+                    x: 490,
+                    y: 141,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                fruits_1: {
+                    x: 210,
+                    y: 193,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                fruits_2: {
+                    x: 349,
+                    y: 193,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                fruits_3: {
+                    x: 490,
+                    y: 193,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                miso_soup_1: {
+                    x: 210,
+                    y: 246,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                miso_soup_2: {
+                    x: 349,
+                    y: 246,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                miso_soup_3: {
+                    x: 490,
+                    y: 246,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                drink_1: {
+                    x: 210,
+                    y: 298,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                drink_2: {
+                    x: 349,
+                    y: 298,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                drink_3: {
+                    x: 490,
+                    y: 298,
+                    fontSize: 17,
+                    maxWidth: 117,
+                    maxHeight: 36,
+                },
+                sushi: {
+                    x: 34,
+                    y: 411,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                pasta: {
+                    x: 184,
+                    y: 411,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                ramen: {
+                    x: 333,
+                    y: 411,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                bread: {
+                    x: 479,
+                    y: 411,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                chicken: {
+                    x: 34,
+                    y: 472,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                don: {
+                    x: 184,
+                    y: 472,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                mashroom: {
+                    x: 333,
+                    y: 472,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                cupnoodles: {
+                    x: 479,
+                    y: 472,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                oden: {
+                    x: 34,
+                    y: 533,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                onigiri: {
+                    x: 184,
+                    y: 533,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                otumami: {
+                    x: 333,
+                    y: 533,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                man: {
+                    x: 479,
+                    y: 533,
+                    fontSize: 17,
+                    maxWidth: 124,
+                    maxHeight: 36,
+                },
+                dagashi: {
+                    x: 41,
+                    y: 667,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 58,
+                },
+                icecream: {
+                    x: 41,
+                    y: 767,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 58,
+                },
+                cake: {
+                    x: 41,
+                    y: 867,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 58,
+                },
+                potatochips: {
+                    x: 148,
+                    y: 667,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 58,
+                },
+                chocolate: {
+                    x: 148,
+                    y: 767,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 58,
+                },
+                gumi: {
+                    x: 148,
+                    y: 867,
+                    fontSize: 17,
+                    maxWidth: 89,
+                    maxHeight: 58,
+                },
+                misterdonats: {
+                    x: 309,
+                    y: 641,
+                    fontSize: 17,
+                    maxWidth: 281,
+                    maxHeight: 34,
+                },
+                mcdonald: {
+                    x: 309,
+                    y: 705,
+                    fontSize: 17,
+                    maxWidth: 281,
+                    maxHeight: 34,
+                },
+                saizeriya: {
+                    x: 309,
+                    y: 767,
+                    fontSize: 17,
+                    maxWidth: 281,
+                    maxHeight: 34,
+                },
+                starbucks: {
+                    x: 309,
+                    y: 829,
+                    fontSize: 17,
+                    maxWidth: 281,
+                    maxHeight: 34,
+                },
+                ootoya: {
+                    x: 309,
+                    y: 891,
+                    fontSize: 17,
+                    maxWidth: 281,
+                    maxHeight: 34,
+                },
+            },
+
+            circle_positions: {
+                morning: {
+                    rice: {
+                        x: 210,
+                        y: 354,
+                        radius: 5,
+                    },
+                    bread: {
+                        x: 210,
+                        y: 370,
+                        radius: 5,
+                    },
+                },
+            },
+
+            updateText(name, newText) {
+                this.texts[name] = newText;
+            },
+
+            updateSelect(name, newSelect) {
+                this.circles[name] = newSelect;
+            },
+
+            submit(e) {
+                e.preventDefault();
+                const canvas = this.$('canvas');
+                const ctx = canvas.getContext('2d');
+                const image = new Image();
+         
+
+                image.onload = () => {
+                    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+                    for (let name in this.texts) {
+                        const text = this.texts[name];
+                        const position = this.positions[name];
+                        drawText(ctx, text, position.x, position.y, position.maxWidth, position.maxHeight, `${position.fontSize}px sans-serif`, 'black');
+                    }
+                };
+
+                image.src = 'https://img.dailyportalz.jp/2116/7954/6433/base.jpg'; // 画像のパスを指定
+            },
+            downloadCanvas() {
+                const canvas = this.$('canvas');
+                const dataURL = canvas.toDataURL('image/png');
+                const link = document.createElement('a');
+                link.href = dataURL;
+                link.download = 'canvas-image.png';
+                link.click();
+            }
+        };
+
+        /**
+        * 指定された設定で文字列をCanvasに描画する関数
+        * @param {CanvasRenderingContext2D} ctx - Canvasのコンテキスト
+        * @param {string} text - 描画するテキスト
+        * @param {number} x - X座標
+        * @param {number} y - Y座標
+        * @param {number} maxWidth - 最大幅
+        * @param {number} maxHeight - 最大高さ
+        * @param {string} font - フォント設定
+        * @param {string} color - テキストの色
+        */
+        function drawText(ctx, text, x, y, maxWidth, maxHeight, font, color) {
+            ctx.font = font;
+            ctx.fillStyle = color;
+            let lineHeight = ctx.measureText('M').width * 1.2;
+            let characters = Array.from(text);
+            let minFontSize = 10; // 最小フォントサイズを10pxとする
+
+            // テキスト全体が最大幅に収まるようにフォントサイズを調整
+            while (ctx.measureText(text).width > maxWidth && parseInt(ctx.font) > minFontSize) {
+                ctx.font = reduceFontSize(ctx.font);
+                lineHeight = ctx.measureText('M').width * 1.2;
+            }
+
+            let line = '';
+            let lines = [];
+
+            // 文字を一つずつ処理して、調整後のフォントサイズで指定した幅に収まるように折り返す
+            for (let n = 0; n < characters.length; n++) {
+                let testLine = line + characters[n];
+                let metrics = ctx.measureText(testLine);
+                let testWidth = metrics.width;
+                if (testWidth > maxWidth && n > 0) {
+                    lines.push(line);
+                    line = characters[n];
+                } else {
+                    line = testLine;
+                }
+            }
+            lines.push(line);
+
+            // テキストの描画開始位置を調整
+            let textHeight = lines.length * lineHeight;
+            let startY = y + lineHeight / 2; // ベースラインを考慮
+            if (lines.length > 1) {
+                startY -= textHeight / 2; // 複数行の場合、中央揃え
+            }
+
+            // テキストを描画
+            for (let i = 0; i < lines.length; i++) {
+                ctx.fillText(lines[i], x, startY + (i * lineHeight));
+            }
+        }
+
+
+        /**
+        * フォントサイズを減少させる関数
+        * @param {string} font - 現在のフォント設定
+        * @returns {string} 新しいフォント設定
+        */
+        function reduceFontSize(font) {
+            const fontSizePattern = /\d+px/;
+            const fontSize = parseInt(font.match(fontSizePattern)[0]);
+            const newFontSize = Math.max(fontSize - 1, 1); // 最小サイズを1pxに制限
+            return font.replace(fontSizePattern, `${newFontSize}px`);
+        }
+
+    </script>
+</image-overlay>
